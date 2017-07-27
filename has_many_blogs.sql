@@ -14,15 +14,15 @@ CREATE TABLE users (
 );
 DROP TABLE IF EXISTS users;
 
--- CREATE TABLE posts (
---   id SERIAL PRIMARY KEY,
---   title VARCHAR(180) DEFAULT NULL,
---   url VARCHAR(510) DEFAULT NULL,
---   content TEXT DEFAULT NULL,
---   create_at timestamp with time zone NOT NULL DEFAULT NOW(),
---   updated_at timestamp with time zone NOT NULL DEFAULT NOW()
--- );
--- DROP TABLE IF EXISTS posts;
+CREATE TABLE posts (
+  id SERIAL PRIMARY KEY,
+  title VARCHAR(180) DEFAULT NULL,
+  url VARCHAR(510) DEFAULT NULL,
+  content TEXT DEFAULT NULL,
+  create_at timestamp with time zone NOT NULL DEFAULT NOW(),
+  updated_at timestamp with time zone NOT NULL DEFAULT NOW()
+);
+DROP TABLE IF EXISTS posts;
 
 -- CREATE TABLE comments (
 --   id SERIAL PRIMARY KEY,
