@@ -24,11 +24,11 @@ CREATE TABLE posts (
 );
 DROP TABLE IF EXISTS posts;
 
--- CREATE TABLE comments (
---   id SERIAL PRIMARY KEY,
---   body VARCHAR(510) DEFAULT NULL,
---   create_at timestamp with time zone NOT NULL DEFAULT NOW(),
---   updated_at timestamp with time zone NOT NULL DEFAULT NOW()
--- );
--- DROP TABLE IF EXISTS comments;
+CREATE TABLE comments (
+  id SERIAL PRIMARY KEY,
+  body VARCHAR(510) DEFAULT NULL,
+  create_at timestamp with time zone NOT NULL DEFAULT NOW(),
+  updated_at timestamp with time zone NOT NULL DEFAULT NOW()
+);
+DROP TABLE IF EXISTS comments;
 
