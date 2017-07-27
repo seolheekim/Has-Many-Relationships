@@ -1,6 +1,6 @@
 CREATE USER has_many_user;
 
--- CREATE DATABASE has_many_blogs OWNER has_many_user;
+CREATE DATABASE has_many_blogs OWNER has_many_user;
 
 -- CREATE TABLE users (
 --   id SERIAL,
