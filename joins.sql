@@ -26,7 +26,7 @@ SELECT comments.*, posts.title AS "post_title", posts.url AS "post_url", comment
 SELECT comments.*, posts.title AS post_title, posts.url AS post_url, comments.body AS comments_body FROM comments INNER JOIN posts on comments.users_id = posts.id WHERE posts.created_at >= '2015-01-01';
 
 -- --Create a query to get the all rows in the comments table, showing post title (aliased as post_title), post url (ailased as post_url), and the comment body (aliased as comment_body) where the comment body contains the word 'USB'
--- SELECT comments.*, posts.title AS post_title, posts.url AS post_url, comments.body AS comments_body FROM comments INNER JOIN posts on comments.users_id = posts.id WHERE comments.body LIKE '%USB%';
+SELECT comments.*, posts.title AS post_title, posts.url AS post_url, comments.body AS comments_body FROM comments INNER JOIN posts on comments.users_id = posts.id WHERE comments.body LIKE '%USB%';
 
 -- --Create a query to get the post title (aliased as post_title), first name of the author of the post, last name of the author of the post, and comment body (aliased to comment_body), where the comment body contains the word 'matrix' ( should have 855 results )
 -- SELECT posts.title AS post_title, users.first_name, users.last_name FROM users INNER JOIN posts ON posts.id = users.id WHERE comments.body LIKE '%matrix%';
